@@ -1,0 +1,105 @@
+
+
+body{
+    background: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.2;
+}
+
+
+.container{
+    max-width: 40em;
+    background: white;
+    padding: 2em;
+    border-radius: 28px;
+}
+
+.recipeImg{
+    max-width: 90%;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    font-family: "Young Serif", serif;
+    letter-spacing: 0.1rem;
+
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 1.8rem;
+    color: hsl(24, 5%, 18%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.prepTitle{
+    color:  hsl(332, 51%, 32%);
+    font-family: "Outfit", sans-serif;
+    
+}
+
+li{
+    line-height: 1.8;
+}
+
+.prepTime{
+    background: hsl(330, 100%, 98%);
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.Instructions{
+    font-weight: 200;
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+li::marker{
+    font-weight: 500;
+    color:  hsl(14, 45%, 36%);
+}
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.55em;
+}
+
+.brown{
+    color:  hsl(14, 45%, 36%);
+}
+
+
+.borderBottom{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media (max-width:32em){
+    body{
+        background: white
+    };
+
+    .recipeImg{
+        border-radius: 0;
+        max-width: 100%;
+    }
+}
